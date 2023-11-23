@@ -1,14 +1,14 @@
-#ifndef	_HFDP_CPP_OBSERVER_CURRENT_CONDITIONS_DISPLAY_HPP_
+#ifndef _HFDP_CPP_OBSERVER_CURRENT_CONDITIONS_DISPLAY_HPP_
 #define _HFDP_CPP_OBSERVER_CURRENT_CONDITIONS_DISPLAY_HPP_
 
 #include "WeatherStation.hpp"
 
-namespace HeadFirstDesignPatterns 
+namespace HeadFirstDesignPatterns
 {
-	namespace Observer 
+	namespace Observer
 	{
 
-		class CurrentConditionsDisplay : private Observer, private DisplayElement 
+		class CurrentConditionsDisplay : private Observer, private DisplayElement
 		{
 
 		private: Subject* _weatherData;
@@ -22,23 +22,32 @@ namespace HeadFirstDesignPatterns
 
 		public: explicit CurrentConditionsDisplay( Subject* weatherData ) : 
 			_weatherData( weatherData ), _temperature( 0.0 ), _humidity( 0.0 ), _pressure(0.0)
-			{ 
+			{
 				assert( weatherData );
 				_weatherData->registerObserver( this );
 			}
 
-		public: ~CurrentConditionsDisplay() 
-				{
-					_weatherData->removeObserver( this );
-				}
+		public:
+			~CurrentConditionsDisplay()
+			{
+				_weatherData->removeObserver(this);
+			}
 
-		public: void update( float temperature, float humidity, float pressure ) 
-				{
-					_temperature = temperature;
-					_humidity = humidity;
-					_pressure = pressure;
-					display();
-				}
+		public: void update( float temperature, float humidity, float pressure )
+			{
+				_temperature = temperature;
+				_humidity = humidity;
+				_pressure = pressure;
+				display();
+			}
+			void display() const
+			{
+				std::cout << "Current Conditions: "
+						  << "Temperature = " << _temperature << "F, "
+						  << "Humidity = " << _humidity << "%, "
+						  << "Pressure = " << _pressure << "hPa"
+						  << std::endl;
+			}
 		};
 	} // namespace Observer
 } // namespace HeadFirstDesignPatterns

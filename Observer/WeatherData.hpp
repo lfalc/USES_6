@@ -19,17 +19,18 @@ namespace HeadFirstDesignPatterns
             
             private: WeatherData( const WeatherData& );
             // Disable copy constructor
-            private: void operator=( const WeatherData& );
+                        private: void operator=( const WeatherData& );
             // Disable assignment operator
             
             public: WeatherData() :
             _temperature( 0.0 ), _humidity( 0.0 ), _pressure( 0.0 )
             {
             }
-
+            public: ~WeatherData(){}
             public: void registerObserver( Observer* o )
             {
                 assert( o );
+                _observers.push_back(o);
             }
 
             public: void removeObserver( Observer* o )
@@ -43,6 +44,7 @@ namespace HeadFirstDesignPatterns
                 for( std::list< Observer* >::iterator iterator = _observers.begin(); _observers.end() != iterator; ++iterator )
                 {
                     Observer* observer = *iterator;
+                    observer->update( _temperature, _humidity, _pressure );
                 }
             }
 
@@ -75,6 +77,7 @@ namespace HeadFirstDesignPatterns
             {
                 return _pressure;
             }
+
         };   
     } // namespace Observer
 } // namespace HeadFirstDesignPatterns

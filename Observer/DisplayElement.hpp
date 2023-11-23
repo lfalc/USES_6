@@ -12,9 +12,9 @@ namespace HeadFirstDesignPatterns
 		{
 			public: virtual void display() const = 0;
 
-			protected: virtual ~DisplayElement() = 0 
-			{
-			};
+			protected: virtual ~DisplayElement(){
+				std::cout << "DisplayElement::~DisplayElement" << std::endl;
+			}
 		};
 	} // namespace Observer
 } // namespace HeadFirstDesignPatterns

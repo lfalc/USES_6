@@ -10,9 +10,13 @@ namespace HeadFirstDesignPatterns
 
 		class Observer 
 		{
-			protected: virtual ~Observer() = 0 
+			public: virtual ~Observer()
 			{
-			};
+				std::cout << "Observer::~Observer" << std::endl;
+			}
+
+			friend class WeatherData;
+
 
 			protected: virtual void update(float temp, float humidity, float pressure) = 0;
 		};

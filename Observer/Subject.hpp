@@ -11,9 +11,9 @@ namespace HeadFirstDesignPatterns
 		class Subject 
 		{
 
-			protected: virtual ~Subject() = 0 
-			{
-			};
+			protected: virtual ~Subject(){
+				
+			}
 
 			public: virtual void registerObserver( Observer* o ) = 0;
 
