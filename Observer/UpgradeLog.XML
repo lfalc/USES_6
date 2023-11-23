@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WeatherStation">
+</Property><Property Name="Projektmappendatei" Value="C:\usr\moj39152\Vorlesung Mottok\SE ME\210-HeadFirstDesignPattern\Silver\Observer\WeatherStation.sln">
+</Property><Property Name="Date" Value="Dienstag, 2. Juni 2015">
+</Property><Property Name="Time" Value="06:32">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="WeatherStation.sln" Description="Datei wurde erfolgreich als &quot;C:\usr\moj39152\Vorlesung Mottok\SE ME\210-HeadFirstDesignPattern\Silver\Observer\WeatherStation.sln.old&quot; gesichert">
+</Event><Event ErrorLevel="0" Project="WeatherStation" Source="WeatherStation.vcproj" Description="Converting project file 'C:\usr\moj39152\Vorlesung Mottok\SE ME\210-HeadFirstDesignPattern\Silver\Observer\WeatherStation.vcproj'.">
+</Event><Event ErrorLevel="1" Project="WeatherStation" Source="WeatherStation.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="WeatherStation" Source="WeatherStation.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="WeatherStation" Source="WeatherStation.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="WeatherStation" Source="WeatherStation.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="WeatherStation" Source="WeatherStation.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="WeatherStation" Source="WeatherStation.vcproj" Description="Done converting to new project file 'C:\usr\moj39152\Vorlesung Mottok\SE ME\210-HeadFirstDesignPattern\Silver\Observer\WeatherStation.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="WeatherStation" Source="WeatherStation.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WeatherStation.sln" Description="Die Projektmappe wurde erfolgreich konvertiert.">
+</Event><Event ErrorLevel="3" Project="" Source="WeatherStation.sln" Description="Converted">
+</Event></UpgradeLog>
