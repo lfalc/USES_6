@@ -1,0 +1,7 @@
+﻿cl : Befehlszeile warning D9035: Die Option "Gm" ist veraltet und wird in einer der nächsten Versionen entfernt.
+  WeatherStation.cpp
+c:\users\rer39596\downloads\tt3_a2\tt3_a2\weather station - modifiziert\weather station - modifiziert\observer\weatherdata.hpp(45): warning C4189: "observer": Lokale Variable ist initialisiert aber nicht referenziert
+c:\users\rer39596\downloads\tt3_a2\tt3_a2\weather station - modifiziert\weather station - modifiziert\observer\weatherstation.cpp(9): error C2259: "HeadFirstDesignPatterns::Observer::CurrentConditionsDisplay": Instanz von abstrakter Klasse kann nicht erstellt werden
+  c:\users\rer39596\downloads\tt3_a2\tt3_a2\weather station - modifiziert\weather station - modifiziert\observer\weatherstation.cpp(9): note: aufgrund folgender Member:
+  c:\users\rer39596\downloads\tt3_a2\tt3_a2\weather station - modifiziert\weather station - modifiziert\observer\weatherstation.cpp(9): note: "void HeadFirstDesignPatterns::Observer::DisplayElement::display(void) const": ist abstrakt
+  c:\users\rer39596\downloads\tt3_a2\tt3_a2\weather station - modifiziert\weather station - modifiziert\observer\displayelement.hpp(13): note: Siehe Deklaration von "HeadFirstDesignPatterns::Observer::DisplayElement::display"
